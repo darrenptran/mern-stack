@@ -1,0 +1,14 @@
+<h1>
+    Home
+</h1>
+<p>
+    <ul>
+       <%if(!currentUser){%>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Sign Up</a></li>
+        <%}%>
+        <%else{%>
+        <li><a href="/logout">Logout</a></li>
+        <%}%>
+    </ul>
+</p>
